@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;1000&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/382893aa1f.js" crossorigin="anonymous"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    'textcolor': '#202624',
+                },
+            },
+        }
+        }                                                                                                                
+    </script>
+    <script>
+        $(document).ready(function(){
+            $(".sfondo").fadeIn(2000);
+            $(".titolo").animate({"left": 0}, 1000);
+            $(".paragrafo, .cta").delay(500).animate({"left": 0}, 1000);
+            $(".1956").delay(1000).fadeIn(1000);
+            })
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities{
+            .bg{
+                background: url('assets/images/seth-kane-XOEAHbE_vO8-unsplash.jpg');
+                background-position: center;
+                background-size: cover;
+            }
+        }
+    </style>
+    <title>Exeter Dr Residence</title>
+</head>
+<body class="font-NunitoSans bg-[#c2ccc9]">
+    <div class="w-full h-screen flex">
+        <div class="w-1/2 flex m-8">
+            <h2 class="text-2xl font-regular text-textcolor">PLC</h2>
+            <div class="1956 hidden">
+                <p class="text-base font-regular text-textcolor flex items-center absolute bottom-96 left-4 rotate-[270deg]">1956</p>
+            </div>
+            <div class="flex flex-col justify-center">
+                <div class="">
+                    <h1 class="titolo text-8xl font-black relative left-[-900px]">Exeter Dr Residence</h1>
+                    <p class="paragrafo relative left-[-900px] text-base font-regular text-textcolor mt-8 mb-8 pr-36">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nisi rem minima libero, cum accusantium veritatis iusto distinctio nulla porro? Nobis, ducimus deserunt. Nam voluptas quia porro, consequuntur nemo ea?</p>
+                    <a href="#" class="">
+                        <p class="cta relative left-[-900px] text-[#c06a79] font-bold hover:text-[#a87f77]">explore <i class="fa-solid fa-arrow-right"></i></p></a>
+                    </div>
+                    <div class="absolute bottom-8">
+                        <p class="text-base font-regular text-textcolor">Antholzer See, Italy</p>
+                    </div>
+            </div>
+        </div>
+        <div class="w-1/2  relative">
+            <img class="object-cover h-screen w-full relative sfondo hidden" src="/assets/images/img-background.jpg" alt="">
+            <div class="flex items-center justify-between absolute top-0 m-6">
+                    <ul class="flex">
+                        <li class="text-base font-regular text-textcolor hover:text-[#c06a79] m-6"><a href="#">houses</a></li>
+                        <li class="text-base font-regular text-textcolor hover:text-[#c06a79] m-6"><a href="#">places</a></li>
+                        <li class="text-base font-regular text-textcolor hover:text-[#c06a79] m-6"><a href="#">featured</a></li>
+                    </ul>
+            </div>
+            <div class="top-0 right-0 absolute mt-12 mr-12">
+                <a class="text-2xl font-regular text-textcolor hover:text-[#c06a79] m-6" href="#"><i class="fa-solid fa-grip-lines"></i></a>
+            </div>
+            <div class="absolute bottom-0 flex">
+                <div class="w-72 h-36 bg-[#d9dce3] p-8">
+                    <h3 class="font-bold text-textcolor text-lg">Pleasant S1</h3>
+                    <p class="text-base font-regular text-textcolor">Great opportunity to see stunning winter views</p>
+                </div>
+                <div class="w-56 h-36">
+                    <img class="object-cover h-full w-full" src="assets\images\img-small.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
